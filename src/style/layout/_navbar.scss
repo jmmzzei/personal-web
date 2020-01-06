@@ -1,0 +1,17 @@
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &>ul{
+        margin-right: 30px;
+        &>li{
+            font-size: 1.2rem;
+            display: inline-block;
+            padding-left: 40px;
+        }
+    }
+
+}

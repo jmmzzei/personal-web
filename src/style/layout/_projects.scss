@@ -1,0 +1,9 @@
+$var: 1rem;
+@import '../components/card';
+
+.projects{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 1rem;
+}

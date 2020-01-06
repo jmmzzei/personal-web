@@ -1,0 +1,35 @@
+$var: '.presentation';
+#{$var}{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid red;
+    height: 40vh;
+    
+
+    &>#{$var}__body{
+        padding-left: 40px;
+        width: 50%;
+        &>h1{
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            margin: 0;
+        }
+        &>p{
+            font-family: 'Source Code Pro', monospace;
+            font-size: 2rem;
+            margin: 0 0 0 30px;
+        }
+    }
+
+    &>#{$var}__animation{
+        background: #fff;
+        color: black;
+        width: 50%;
+        border: 1px solid red;
+        height: 30vh;
+    }
+
+}
