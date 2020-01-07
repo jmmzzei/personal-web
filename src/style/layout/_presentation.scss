@@ -9,10 +9,11 @@ $var: '.presentation';
 
     &>#{$var}__body{
         width: 50%;
+        // margin: 0 50px;
         
         &>h1{
             font-family: 'Playfair Display', serif;
-            font-size: 5rem;
+            font-size: 5.2rem;
             color: white;
             margin: 0;
         }
@@ -20,7 +21,7 @@ $var: '.presentation';
         &>p{
             font-family: 'Source Code Pro', monospace;
             font-size: 2rem;
-            color: $accent;
+            color: $primary;
             margin: 0 0 0 30px;
         }
     }
@@ -29,7 +30,6 @@ $var: '.presentation';
         color: black;
         width: 700px;
         height: 200px;
-        // overflow: hidden;
     }
 
 }

@@ -1,18 +1,16 @@
-svg{ 
-    margin: 0;
-    padding: 0;
-}
-
 .si{
-    animation: key-si 0.5s ease forwards;
+    animation: mouse-over 2s ease infinite;
 }
 
-@keyframes key-si {
+@keyframes mouse-over {
     50%{
-        fill: $primary;
+        fill: $accent;
+        transform: scale(0.8);
+        transform-origin: center;
+        // transform-box: fill-box;
     }
     100%{
-        fill: $accent;
+        fill: $primary;
     }
 }
 
@@ -35,6 +33,10 @@ svg{
     }
 }
 
+
+
+
+
 .over{
     animation: over 1s ease-in forwards;
 }
@@ -56,6 +58,7 @@ svg{
 .flow{
     animation: wave 2s infinite ease-in-out;
 }
+
 
 @keyframes wave {
     0%{

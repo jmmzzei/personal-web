@@ -2,3 +2,90 @@
 @import './base/reset';
 @import './layout/main-body';
 
+@media (max-width: 690px){
+    .presentation{
+
+        &>&__body{
+            width: 85%;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        &>&__animation{
+            width: 500px;
+            border: 1px solid red;
+            margin-bottom: 20px;
+        }
+    }
+
+        .projects{
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+
+}
+
+@media (max-width: 980px){
+    .presentation{
+        flex-direction: column;
+        border: 1px solid blue;
+        outline: 1px solid green;
+
+        &>&__body{
+            &>h1{
+                font-size: 4.2rem;
+            }
+            &>p{
+                font-size: 1.5rem;
+            }
+            width: 85%;
+            margin-top: 140px;
+            margin-bottom: 40px;
+            border: 1px solid blue;
+            outline: 1px solid green;
+        }
+
+
+        &>&__animation{
+            border: 1px solid blue;
+            outline: 1px solid green;
+            width: 90%;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .projects{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+}
+
+
+// @media (max-width: 1200px){
+//     .presentation{
+//         // flex-direction: column;
+
+//         &>&__animation{
+//             width: 500px;
+//             margin-bottom: 100px;
+//         }
+
+//         &>&__body{
+//             width: 85%;
+//             margin-top: 150px;
+//             margin-bottom: 50px;
+//         }
+
+
+//         &>&__animation{
+//             width: 75%;
+//             margin-top: 150px;
+//             margin-bottom: 50px;
+//         }
+//     }
+
+// }
+
+
+
+
