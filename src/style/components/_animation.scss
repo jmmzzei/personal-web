@@ -1,0 +1,118 @@
+svg{ 
+    margin: 0;
+    padding: 0;
+}
+
+.si{
+    animation: key-si 0.5s ease forwards;
+}
+
+@keyframes key-si {
+    50%{
+        fill: $primary;
+    }
+    100%{
+        fill: $accent;
+    }
+}
+
+.svg{
+    animation: key-next 0.5s ease forwards;   
+}
+
+@keyframes key-next {
+    35%{
+        fill: rgb(114, 255, 173);
+    }
+    50%{
+        fill: rgb(115, 255, 80);
+    }
+    75%{
+        fill: rgba(255, 251, 0, 0.973);
+    }
+    100%{
+        fill: $primary;
+    }
+}
+
+.over{
+    animation: over 1s ease-in forwards;
+}
+
+@keyframes over {
+    100%{
+        fill: $accent;
+    }
+}
+
+.transform {
+    transform: translateY(20px);
+}
+
+.cir1{
+    box-shadow: 0 0 0.4em #00000030;
+}
+
+.flow{
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%{
+        transform: translateY(-2px);
+    }
+    5%{
+        transform: translateY(-2px);
+    }
+    40%{
+        transform: translateY(2px);
+    }
+    60%{
+        transform: translateY(-2px);
+    }
+    92%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
+
+
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+        fill: $secondary;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.none{
+    animation: key-next 0.5s ease forwards;   
+}
+
+.inicial {
+    animation: circle-inicial 0.5s ease forwards;   
+}
+
+@keyframes circle-inicial {
+    35%{
+        fill: rgb(141, 253, 118);
+    }
+    50%{
+        fill: rgb(68, 0, 255);
+    }
+    75%{
+        fill: $accent;
+    }
+    100%{
+        fill: $primary;
+    }
+}
+

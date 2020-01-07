@@ -7,7 +7,7 @@ body,
 html{
     margin: 0;
     padding: 0;
-    background: black;
+    background: $background;
     color: #fff;
 }
 
@@ -17,4 +17,9 @@ ul{
 
 a{
     color: $accent;
+}
+
+::selection{
+    background: $accent;
+    color: rgba($color: $accent, $alpha: 0.8);
 }

@@ -1,0 +1,21 @@
+@import './layout/navbar';
+@import './layout/projects';
+@import './components/animation';
+@import './layout/presentation';
+@import './components/shadow';
+@import './layout/contact';
+
+main{
+    width: 85%;
+    margin: auto;
+}
+
+.title{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    text-align: end;
+    color: $dark-grey;
+    margin-bottom: 60px;
+    font-size: 3rem;
+    text-decoration: underline;
+}

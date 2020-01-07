@@ -1,16 +1,27 @@
 .card{
-    border: 1px solid $primary;
+    border: 2px solid $primary;
+    box-shadow: 0 0 2em rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    padding: 0 20px 20px 20px;
+    // margin: 30px;
     display: grid;
     grid-template-columns: 0.5fr 2fr;
     grid-template-areas: 
     "icons body";
-    
+
+    &:hover{
+        transform: scale(1.04) translateY(-10px);
+        background: rgba($color: $primary, $alpha: .9);
+        transition: .3s;
+    }
+
+    &:hover >&__body > div > a{
+        background: #fff;   
+        color: $primary;
+    }
+
     &>&__icon{
         grid-area: icons;
-        background: #000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -31,12 +42,27 @@
             text-align: end;
         }
 
+        &>code{
+            text-align: end;
+            display: block;
+            margin: 20px 0;
+        }
+
         &>div{
             color: $accent;
             text-align: end;
-            &>p{
+            &>a{
                 display: inline;
-                padding-left: 20px;
+                margin-left: 30px;
+                padding: 5px;
+                font-weight: 800;
+
+                &:hover{
+                    background: $accent;
+                    color: white;
+                    font-weight: 800;
+                }
+
             }
         }
         
