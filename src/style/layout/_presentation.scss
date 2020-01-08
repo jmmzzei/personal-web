@@ -1,5 +1,4 @@
-$var: '.presentation';
-#{$var}{
+.presentation{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,26 +6,27 @@ $var: '.presentation';
     margin: auto;
     height: 60vh;
 
-    &>#{$var}__body{
+    &>&__body{
         width: 50%;
-        // margin: 0 50px;
+        margin: 0 15px;
         
         &>h1{
             font-family: 'Playfair Display', serif;
-            font-size: 5.2rem;
+            font-size: $title;
             color: white;
             margin: 0;
         }
 
-        &>p{
-            font-family: 'Source Code Pro', monospace;
-            font-size: 2rem;
+        &>code{
+            // font-family: 'Source Code Pro', monospace;
+            display: block;
+            font-size: $subtitle;
             color: $primary;
             margin: 0 0 0 30px;
         }
     }
 
-    &>#{$var}__animation{
+    &>&__animation{
         color: black;
         width: 700px;
         height: 200px;

@@ -14,8 +14,24 @@ main{
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     text-align: end;
-    color: $dark-grey;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 3rem;
+    padding: 15px;
     text-decoration: underline;
+
+    &>a{
+        color: $dark-grey;
+        cursor: pointer;
+    }
+
+    &>a:hover{
+        animation: hover 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+    }
+}
+
+@keyframes hover {
+    100%{
+        color: #fff;
+        letter-spacing: 1px;
+    }
 }

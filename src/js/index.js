@@ -43,3 +43,14 @@ document.getElementById('submit').addEventListener('click', e => {
     e.preventDefault()
     console.log('a');
 })
+
+
+document.getElementById('nav-projects').addEventListener('mouseenter', e => {
+    document.getElementById('projects').firstChild.style.color = '#fff'
+    document.getElementById('projects').firstChild.style.transition = '.4s'
+    
+})
+
+document.getElementById('nav-projects').addEventListener('mouseleave', e => {
+    document.getElementById('projects').firstChild.style.color = 'rgb(56, 56, 56)';
+})

@@ -8,11 +8,16 @@
     justify-content: flex-end;
 
     &>ul{
+        width: 100%;
+
         &>li{
             font-size: 1.1rem;
             display: inline-block;
             margin-left: 40px;
             padding: 3px;
+            &>a{
+                color: $accent;
+            }
 
             &>a:hover{
                 color: $primary;

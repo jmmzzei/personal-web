@@ -1,11 +1,70 @@
 @import './base/colors';
 @import './base/reset';
+@import './base/var';
 @import './layout/main-body';
 
-@media (max-width: 690px){
+
+@media (min-width: 200px) and (max-width: 340px){
+    .presentation{
+        &>&__body{
+            width: 100%;
+
+            &>h1{
+                font-size: $title - 1.4rem;
+            }
+            &>code{
+                font-size: $subtitle - .6rem;
+                margin: 10px 0 0 0;
+                width: 100%;   
+                white-space: nowrap;             
+            }
+            width: 85%;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        &>&__animation{
+            width: 500px;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .navbar,
+    .contact{
+        width: 100%;
+        justify-content: center;
+
+
+    &>ul{
+        &>li{
+            margin-left: 20px;
+            }
+        }
+    }
+
+    .projects{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .title{
+        margin-top: 20px;
+        font-size: $tag - 1rem;
+    }
+
+}
+
+
+@media (min-width: 341px) and (max-width: 510px){
     .presentation{
 
         &>&__body{
+            &>h1{
+                font-size: $title - 2.2rem;
+            }
+            &>p{
+                font-size: $subtitle - .5rem;
+            }
             width: 85%;
             margin-top: 10px;
             margin-bottom: 50px;
@@ -13,45 +72,89 @@
 
         &>&__animation{
             width: 500px;
-            border: 1px solid red;
             margin-bottom: 20px;
         }
     }
 
-        .projects{
+    .navbar,
+    .contact{
+        width: 95%;
+        justify-content: center;
+    }
+
+    .projects{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+}
+
+@media (min-width: 511px) and (max-width: 690px){
+    .presentation{
+
+        &>&__body{
+            &>h1{
+                font-size: $title - 1.2rem;
+            }
+            &>p{
+                font-size: $subtitle - .5rem;
+            }
+            width: 85%;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        &>&__animation{
+            width: 500px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .navbar,
+    .contact{
+        width: 95%;
+        justify-content: center;
+    }
+
+    .projects{
         grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
 
 }
 
-@media (max-width: 980px){
-    .presentation{
-        flex-direction: column;
-        border: 1px solid blue;
-        outline: 1px solid green;
+@media (min-width:691px) and (max-width:980px){
 
+    .presentation{
+        flex-direction: column;        
+    
         &>&__body{
             &>h1{
-                font-size: 4.2rem;
+                font-size: $title - .8rem;
             }
             &>p{
-                font-size: 1.5rem;
+                font-size: $subtitle - .5rem;
             }
             width: 85%;
             margin-top: 140px;
             margin-bottom: 40px;
-            border: 1px solid blue;
-            outline: 1px solid green;
         }
 
-
         &>&__animation{
-            border: 1px solid blue;
-            outline: 1px solid green;
             width: 90%;
             margin-top: 10px;
             margin-bottom: 50px;
         }
+    }
+
+    .navbar,
+    .contact{
+        width: 95%;
+        justify-content: center;
+    }
+
+
+    .title{
+        margin-top: 80px;
+        font-size: $tag - 1rem;
     }
 
     .projects{
@@ -61,30 +164,39 @@
 }
 
 
-// @media (max-width: 1200px){
-//     .presentation{
-//         // flex-direction: column;
-
-//         &>&__animation{
-//             width: 500px;
-//             margin-bottom: 100px;
-//         }
-
-//         &>&__body{
-//             width: 85%;
-//             margin-top: 150px;
-//             margin-bottom: 50px;
-//         }
+@media (min-width: 981px) and (max-width: 1200px){
+    .presentation{
 
 
-//         &>&__animation{
-//             width: 75%;
-//             margin-top: 150px;
-//             margin-bottom: 50px;
-//         }
-//     }
+        &>&__body{
+            &>h1{
+                font-size: $title - 2.2rem;
+            }
+            &>p{
+                font-size:  $subtitle - .5rem;
+            }
+            width: 85%;
 
-// }
+        }
+
+        &>&__animation{
+            width: 90%;
+
+        }
+    }
+
+    .title{
+        // margin-top: 80px;
+        font-size: $tag - .5rem;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 4200px){
+    
+
+
+}
+
 
 
 
