@@ -6,8 +6,8 @@ const animate = document.getElementById('animate')
 
 import Matrix from './matrix'
 
-const elementsPerRow = 35, // animate.offsetWidth/20,  //35
-      elementsPerColumn = 10, //animate.offsetHeight/20, //10
+const elementsPerRow = 35, 
+      elementsPerColumn = 10,
       elementSize = animate.offsetWidth/elementsPerRow;
 
 const elementsNumber = elementsPerRow * elementsPerColumn
@@ -21,8 +21,6 @@ console.log(`elperrow: ${elementsPerRow}`);
 console.log(rows / elementsPerRow);
 
 function wave(elementsNumber, elementsPerRow, rows) {
-
-    
 
     for (let i = rows; i < elementsNumber; i += elementsPerRow) {
         document.querySelector(`#animate > svg:nth-child(${i})`).style.animation = `wave 3s ${rows/elementsPerRow}s infinite ease-out`

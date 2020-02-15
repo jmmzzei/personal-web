@@ -37,7 +37,7 @@ export default class Svg {
         cir1.setAttribute("cx", this._width / 2);
         cir1.setAttribute("cy", this._width / 2);
         cir1.setAttribute("r", this._width / 10);
-        cir1.setAttribute("fill", '#777')
+        cir1.setAttribute("fill", '#fff')
 
         svg1.appendChild(cir1);
         document.getElementById('animate').appendChild(svg1)
