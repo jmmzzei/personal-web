@@ -15,15 +15,12 @@
 }
 
 .svg{
-    animation: key-next 0.5s ease forwards;   
+    animation: key-next 0.5s ease forwards;
 }
 
 @keyframes key-next {
     35%{
         fill: rgb(114, 255, 173);
-    }
-    50%{
-        fill: rgb(115, 255, 80);
     }
     75%{
         fill: rgba(255, 251, 0, 0.973);
@@ -32,10 +29,6 @@
         fill: $primary;
     }
 }
-
-
-
-
 
 .over{
     animation: over 1s ease-in forwards;
@@ -59,7 +52,6 @@
     animation: wave 2s infinite ease-in-out;
 }
 
-
 @keyframes wave {
     0%{
         transform: translateY(-2px);
@@ -81,7 +73,6 @@
     }
 }
 
-
 @keyframes scale {
     0%{
         transform: scale(1);
@@ -95,7 +86,6 @@
     }
 }
 
-
 .none{
     animation: key-next 0.5s ease forwards;   
 }
@@ -105,14 +95,11 @@
 }
 
 @keyframes circle-inicial {
-    35%{
-        fill: rgb(141, 253, 118);
-    }
-    50%{
-        fill: rgb(68, 0, 255);
+    20%{
+        fill: $accent;
     }
     75%{
-        fill: $accent;
+        fill: rgb(255, 251, 0);
     }
     100%{
         fill: $primary;

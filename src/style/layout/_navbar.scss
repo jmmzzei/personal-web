@@ -1,17 +1,18 @@
 .navbar{
-    font-family: 'Source Code Pro', monospace;
     height: 80px;
     width: 85%;
     display: flex;
     align-items: center;
     margin: auto;
-    justify-content: flex-end;
 
     &>ul{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
         &>li{
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             display: inline-block;
             margin-left: 40px;
             padding: 3px;

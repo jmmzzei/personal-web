@@ -24,19 +24,16 @@
         }
 
         &>&__animation{
-            width: 500px;
-            margin-bottom: 20px;
-
+            display: none;
         }
     }
 
     .navbar,
     .contact{
         width: 100%;
-        justify-content: center;
-
 
     &>ul{
+        justify-content: center;
         &>li{
             margin-left: 20px;
             }
@@ -71,8 +68,7 @@
         }
 
         &>&__animation{
-            width: 500px;
-            margin-bottom: 20px;
+            display: none;
         }
     }
 
@@ -80,6 +76,10 @@
     .contact{
         width: 95%;
         justify-content: center;
+
+        &>ul{
+            justify-content: center;
+        }
     }
 
     .projects{
@@ -104,8 +104,7 @@
         }
 
         &>&__animation{
-            width: 500px;
-            margin-bottom: 20px;
+            display: none;
         }
     }
 
