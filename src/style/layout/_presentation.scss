@@ -15,14 +15,16 @@
             font-size: $title;
             color: white;
             margin: 0;
+            // text-decoration: underline;
         }
-
+        
         &>code{
             font-family: monospace;
             display: block;
             font-size: $subtitle;
             color: $primary;
             margin: 0 0 0 30px;
+            text-decoration: underline;
         }
     }
 

@@ -1,9 +1,10 @@
 @import './layout/navbar';
 @import './layout/projects';
-@import './components/animation';
+@import '../components/animation';
 @import './layout/presentation';
-@import './components/shadow';
+@import '../components/shadow';
 @import './layout/contact';
+@import '../components/form';
 
 main{
     width: 85%;

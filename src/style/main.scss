@@ -54,13 +54,18 @@
 
 @media (min-width: 341px) and (max-width: 510px){
     .presentation{
+        height: 80vh;
 
         &>&__body{
+            margin: 0;
+
             &>h1{
-                font-size: $title - 2.2rem;
+                font-size: $title - 1.1rem;
             }
-            &>p{
-                font-size: $subtitle - .5rem;
+            &>code{
+                margin-left: 0;
+                margin-top: 20px;
+                font-size: $subtitle - 0.3rem;
             }
             width: 85%;
             margin-top: 10px;
@@ -78,12 +83,39 @@
         justify-content: center;
 
         &>ul{
-            justify-content: center;
+            justify-content: space-evenly;
+            padding-left: 0;
+
+            li{
+                margin-left: 0;
+                font-size: 1.5rem;
+            }
         }
     }
 
     .projects{
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .card{
+            display: flex;
+
+            .card__body{
+                h3{
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .title{
+        text-align: end;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    #contact{
+        margin-bottom: 0;
     }
 
 }

@@ -20,6 +20,19 @@ console.log(`rows: ${rows}`);
 console.log(`elperrow: ${elementsPerRow}`);
 console.log(rows / elementsPerRow);
 
+function createTag(){
+    let scripty = document.createElement('script')
+    // scripty.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-155317539-1')
+    scripty.setAttribute('style', 'background: #fff; width: 100%; height: 80px;')
+    // scripty.setAttribute('async')
+    document.body.appendChild(scripty);
+    // document.getElementById('body').prepend(scripty)
+}
+
+createTag()
+
+
+
 function wave(elementsNumber, elementsPerRow, rows) {
 
     for (let i = rows; i < elementsNumber; i += elementsPerRow) {
@@ -35,11 +48,33 @@ function wave(elementsNumber, elementsPerRow, rows) {
     }
 }
 
+// function js(elementsNumber, rows){
+//     for (let j = 1; j < 12; j++) {
+//         for (let i = j; i < elementsNumber; i += rows ) {
+//             document.querySelector(`#animate > svg:nth-child(${i})`).style.background = `yellow`
+//         }
+//     }
+
+//     for (let k = 44; k < elementsNumber - rows; k += rows) {
+//         document.querySelector(`#animate > svg:nth-child(${k})`).style.background = `black`
+//     }
+
+//     for (let k = 214; k < elementsNumber - rows; k += rows) {
+//         document.querySelector(`#animate > svg:nth-child(${k})`).style.background = `black`
+//     }
+
+//     for (let k = 284; k < 289; k++) {
+//         document.querySelector(`#animate > svg:nth-child(${k})`).style.background = `black`
+//     }
+// }
+
+// js(elementsNumber, elementsPerRow)
+
+
 wave(elementsNumber, elementsPerRow, elementsPerRow)
 
 document.getElementById('submit').addEventListener('click', e => {
     e.preventDefault()
-    console.log('a');
 })
 
 
