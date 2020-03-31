@@ -12,10 +12,11 @@
         justify-content: flex-end;
 
         &>li{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             display: inline-block;
             margin-left: 40px;
             padding: 3px;
+
             &>a{
                 color: $accent;
             }
@@ -23,6 +24,7 @@
             &>a:hover{
                 color: $primary;
                 font-weight: 800;
+                transition: all 0.3s ease;
             }
         }
     }

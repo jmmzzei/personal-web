@@ -8,6 +8,7 @@
 
 main{
     width: 85%;
+    border-radius: 10px;
     margin: auto;
 }
 
@@ -16,12 +17,14 @@ main{
     font-weight: 600;
     text-align: end;
     margin-bottom: 40px;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 15px;
     text-decoration: underline;
-
+    
     &>a{
-        color: $dark-grey;
+        border-radius: 10px;
+        padding: 5px;
+        color: $background;
         cursor: pointer;
     }
 
