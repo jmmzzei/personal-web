@@ -18,10 +18,12 @@
             padding: 3px;
 
             &>a{
-                color: $accent;
-            }
+                color: $primary;
+                text-decoration: none;
+              }
 
             &>a:hover{
+              text-decoration: underline; 
                 color: $primary;
                 font-weight: 800;
                 transition: all 0.3s ease;
