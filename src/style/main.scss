@@ -1,249 +1,91 @@
-@import './base/colors';
-@import './base/reset';
-@import './base/var';
-@import './layout/main-body';
+@import "./base/colors";
+@import "./base/reset";
+@import "./base/var";
+@import "./layout/main-body";
 
-
-@media (min-width: 200px) and (max-width: 340px){
-    .presentation{
-        &>&__body{
-            width: 100%;
-            margin-top: 40px;
-            margin-bottom: 50px;
-
-            &>h1{
-                font-size: $title - 1.6rem;
-            }
-            &>code{
-                font-size: $subtitle - .8rem;
-                margin: 10px 0 0 0;
-                width: 100%;   
-                white-space: nowrap;             
-            }
-        }
-
-        &>&__animation{
-            display: none;
-        }
+@media (min-width: 36em) {
+  .presentation {
+    & > &__body {
+      & > h1 {
+        font-size: $title + 0.8rem;
+      }
+      & > code {
+        font-size: $subtitle + 0.5rem;
+      }
     }
-
-    .navbar,
-    .contact{
-        width: 95%;
-        justify-content: center;
-
-        &>ul{
-            justify-content: space-evenly;
-            padding-left: 0;
-
-            li{
-                margin-left: 0;
-                font-size: 1.3rem;
-            }
-        }
-    }
-    .projects{
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-
-        .card{
-            display: flex;
-
-            .card__body{
-                h3{
-                    font-size: 1.5rem;
-                }
-                p, code{
-                    width: 90%;
-                }
-            }
-        }
-    }
-
-    .title{
-        margin-top: 20px;
-        font-size: $tag - 1rem;
-    }
-
+  }
 }
 
+@media (min-width: 51.9em) {
+  .presentation {
+    flex-direction: column;
 
-@media (min-width: 341px) and (max-width: 510px){
-    .presentation{
-        height: 80vh;
-
-        &>&__body{
-            margin: 0;
-
-            &>h1{
-                font-size: $title - 1.5rem;
-            }
-            &>code{
-                margin-left: 0;
-                margin-top: 20px;
-                font-size: $subtitle - 0.5rem;
-            }
-            width: 85%;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        &>&__animation{
-            display: none;
-        }
+    & > &__body {
+      flex-direction: column;
+      align-items: center;
+      & > code {
+        font-size: $subtitle + 1.5rem;
+      }
     }
 
-    .navbar,
-    .contact{
-        width: 95%;
-        justify-content: center;
-
-        &>ul{
-            justify-content: space-evenly;
-            padding-left: 0;
-
-            li{
-                margin-left: 0;
-                font-size: 1.3rem;
-            }
-        }
+    & > &__animation {
+      display: block;
+      width: 100%;
     }
+  }
 
-    .projects{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  .contact {
+    width: 75%;
+    justify-content: center;
+  }
 
-        .card{
-            display: flex;
+  .navbar {
+    ul {
+      justify-content: flex-end;
 
-            .card__body{
-                h3{
-                    font-size: 1.5rem;
-                }
-                p, code{
-                    width: 90%;
-                }
-
-            }
-        }
+      width: 90%;
+      li {
+        margin-left: 5rem;
+      }
     }
+  }
 
-    .title{
-        text-align: end;
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-    #contact{
-        margin-bottom: 0;
-    }
-
+  .title {
+    margin-top: 8rem;
+    font-size: $tag + 1rem;
+  }
 }
 
-@media (min-width: 511px) and (max-width: 690px){
-    .presentation{
-
-        &>&__body{
-            &>h1{
-                font-size: $title - 1.2rem;
-            }
-            &>p{
-                font-size: $subtitle - .5rem;
-            }
-            width: 85%;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        &>&__animation{
-            display: none;
-        }
+@media (min-width: 62em) {
+  .presentation {
+    & > &__body {
+      width: 85%;
+      & > h1 {
+        font-size: $title + 2.2rem;
+      }
     }
+  }
 
-    .navbar,
-    .contact{
-        width: 95%;
-        justify-content: center;
-    }
-
-    .projects{
-        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    }
-
+  .title {
+    font-size: $tag + 0.5rem;
+  }
 }
 
-@media (min-width:691px) and (max-width:980px){
+@media (min-width: 75em) {
+  .presentation {
+    & > &__body {
+      & > h1 {
+        font-size: $title + 3rem;
+      }
 
-    .presentation{
-        flex-direction: column;        
-    
-        &>&__body{
-            &>h1{
-                font-size: $title - .8rem;
-            }
-            &>p{
-                font-size: $subtitle - .5rem;
-            }
-            width: 85%;
-            margin-top: 140px;
-            margin-bottom: 40px;
-        }
-
-        &>&__animation{
-            // width: 90%;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
+      & > code {
+        font-size: $subtitle + 2rem;
+      }
     }
+  }
 
-    .navbar,
-    .contact{
-        width: 95%;
-        justify-content: center;
-    }
-
-
-    .title{
-        margin-top: 80px;
-        font-size: $tag - 1rem;
-    }
-
-    .projects{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
+  .contact {
+    width: 50%;
+    justify-content: center;
+  }
 }
-
-
-@media (min-width: 981px) and (max-width: 1200px){
-    .presentation{
-
-        &>&__body{
-            &>h1{
-                font-size: $title - 2.2rem;
-            }
-            &>p{
-                font-size:  $subtitle - .5rem;
-            }
-            width: 85%;
-        }
-
-        &>&__animation{
-            width: 100%;
-
-        }
-    }
-
-    .title{
-        font-size: $tag - .5rem;
-    }
-}
-
-@media (min-width: 1201px) and (max-width: 4200px){
-    
-
-
-}
-
-
-
-
-
