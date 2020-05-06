@@ -1,26 +1,53 @@
-*{
-    box-sizing: border-box;
-    font-size: 62,5%;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
-body,
-html{
-    margin: 0;
-    padding: 0;
-    background: $background;
-    color: #fff;
+html {
+  font-size: 62.5%;
 }
 
-ul{
-    list-style: none;
+body {
+  margin: 0;
+  padding: 0;
+  background: $background;
+  color: #fff;
 }
 
-svg{ 
-    margin: 0;
-    padding: 0;
+h1 {
+  font-size: 3.2rem;
 }
 
-::selection{
-    background: $accent;
-    color: rgba($color: white, $alpha: 0.5);
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.872rem;
+}
+
+form,
+p,
+code,
+a,
+label,
+input,
+button,
+li {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: $accent;
+  color: rgba($color: white, $alpha: 0.5);
 }

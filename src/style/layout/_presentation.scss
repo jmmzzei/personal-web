@@ -1,34 +1,41 @@
-.presentation{
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  height: 80vh;
+
+  &__body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: auto;
-    height: 60vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+    margin: 0;
+    width: 85%;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 
-    &>&__body{
-        width: 50%;
-        margin: 0 40px 0 0;
-        
-        &>h1{
-            font-family: 'Playfair Display', serif;
-            font-size: $title;
-            color: white;
-            margin: 0;
-        }
-        
-        &>code{
-            font-family: monospace;
-            display: block;
-            font-size: $subtitle;
-            color: $primary;
-            margin: 10px 0;
-        }
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: $title;
+      color: $secondary;
+      margin: 0;
     }
 
-    &>&__animation{
-        width: 700px;
-        height: 200px;
+    code {
+      font-family: monospace;
+      display: block;
+      font-size: $subtitle;
+      color: $primary;
+      margin-left: 0;
+      margin-top: 2rem;
     }
+  }
 
+  &__animation {
+    display: none;
+    max-width: 700px;
+    max-height: 200px;
+  }
 }

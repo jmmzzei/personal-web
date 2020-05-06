@@ -1,34 +1,37 @@
-.navbar{
-    height: 80px;
-    width: 85%;
+.navbar {
+  height: 8rem;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  ul {
+    width: 100%;
     display: flex;
     align-items: center;
-    margin: auto;
+    justify-content: space-evenly;
+    padding-left: 0;
 
-    &>ul{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    li {
+      display: inline-block;
+      padding: 3px;
 
-        &>li{
-            font-size: 1.4rem;
-            display: inline-block;
-            margin-left: 40px;
-            padding: 3px;
+      a {
+        color: $secondary;
+        text-decoration: none;
 
-            &>a{
-                color: $primary;
-                text-decoration: none;
-              }
-
-            &>a:hover{
-              text-decoration: underline; 
-                color: $primary;
-                font-weight: 800;
-                transition: all 0.3s ease;
-            }
+        code {
+          font-size: 2rem;
         }
-    }
 
+        :hover {
+          text-decoration: underline;
+          color: $primary;
+          font-weight: 800;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
 }
