@@ -1,73 +1,93 @@
-.card{
-    border: 2px solid $primary;
-    box-shadow: 0 0 0.8em $dark-grey;
-    border-radius: 10px;
-    padding: 0 20px 20px 20px;
+.card {
+  border: 1px solid $primary;
+  box-shadow: 0 0 0.8em $dark-grey;
+  border-radius: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 5px 1.2em black;
+    border-color: rgba($color: $primary, $alpha: 0.7);
+    transition: 0.2s;
+  }
+
+  &:hover > &__body > div > a {
+    color: $background;
+  }
+
+  &:hover > &__body > h3 {
+    background: $background;
+    color: $secondary;
+  }
+
+  &:hover > &__body {
+    background: $secondary;
+    color: $background;
+  }
+
+  & > &__body {
+    font-family: monospace;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2rem;
 
-    &:hover{
-        transform: scale(1.04) translateY(-10px);
-        background: rgba($color: $primary, $alpha: .7);
-        box-shadow: 0 0 1.8em $dark-grey;
-        border-color:rgba($color: $primary, $alpha: .7); 
-        transition: .3s;
+    h3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 0.85rem 0.85rem 0 0;
+      padding: 1.4rem;
+      padding-right: 1.2rem;
+      margin: 0;
+      margin-bottom: 2rem;
+      width: 100%;
+      text-align: end;
+      color: $background;
+      background: $secondary;
     }
 
-    &:hover >&__body > div > a{
-        background: $background;   
-        color: rgba($color: $primary, $alpha: .9);
+    p {
+      padding-top: 6rem;
+      width: 90%;
+      margin: 1.5rem;
+      font-family: "Open Sans", sans-serif;
+      text-align: end;
     }
 
-    &>&__body{
+    code {
+      width: 90%;
+      padding: 0 1.5rem 0 0;
+      text-align: end;
+      display: block;
+      margin: 2rem 0;
+    }
+
+    div {
+      color: $accent;
+      text-align: end;
+      margin: 1rem;
+      margin-bottom: 2rem;
+      a {
         font-family: monospace;
-        display: flex;        
-        align-items: flex-end;
-        flex-direction: column;
-        justify-content: flex-end;
-        
-        &>h3{
-            width: 100%;
-            font-size: 2rem;
-            text-align: end;
-        }
-        
-        &>p{
-            width: 70%;
-            font-family: 'Open Sans', sans-serif;
-            text-align: end;
-        }
+        display: inline;
+        margin-left: 3rem;
+        padding: 5px;
+        font-weight: 800;
+        color: $accent;
 
-        &>code{
-            width: 70%;
-            text-align: end;
-            display: block;
-            margin: 20px 0;
+        &:hover {
+          background: $background;
+          color: white;
+          font-weight: 800;
         }
-
-        &>div{
-            color: $accent;
-            text-align: end;
-            &>a{
-                font-family: monospace;
-                display: inline;
-                font-size: 1.05rem;
-                margin-left: 30px;
-                padding: 5px;
-                font-weight: 800;
-                color: $accent;
-
-                &:hover{
-                    background: $background;
-                    color: white;
-                    font-weight: 800;
-                }
-
-            }
-        }
-        
+      }
     }
-
-
+  }
 }
