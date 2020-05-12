@@ -1,55 +1,30 @@
-.si {
-  animation: mouse-over 2s ease infinite;
+.mouse-over {
+  animation: mouse-over 3s ease infinite;
 }
 
 @keyframes mouse-over {
-  50% {
+  0% {
     fill: $secondary;
-    transform: scale(0.8);
-    transform-origin: center;
     transform-box: fill-box;
+    transform-origin: center;
   }
-  100% {
-    fill: $primary;
-  }
-}
-
-.svg {
-  animation: key-next 0.5s ease forwards;
-}
-
-@keyframes key-next {
-  35% {
-    fill: rgb(114, 255, 173);
-  }
-  75% {
-    fill: rgba(255, 251, 0, 0.973);
-  }
-  100% {
-    fill: $primary;
-  }
-}
-
-.over {
-  animation: over 1s ease-in forwards;
-}
-
-@keyframes over {
-  100% {
+  15% {
     fill: $accent;
   }
-}
-
-.transform {
-  transform: translateY(2rem);
-}
-
-.cir1 {
-  box-shadow: 0 0 0.4em #00000030;
-}
-
-.flow {
-  animation: wave 2s infinite ease-in-out;
+  20% {
+    fill: $primary;
+    transform: scale(4);
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  30% {
+    fill: #23e2bc;
+  }
+  60% {
+    fill: $secondary;
+    transform: scale(1);
+    transform-origin: center;
+  }
 }
 
 @keyframes wave {
@@ -70,37 +45,5 @@
   }
   100% {
     transform: translateY(-2px);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(2);
-    fill: $secondary;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.none {
-  animation: key-next 0.5s ease forwards;
-}
-
-.inicial {
-  animation: circle-inicial 0.5s ease forwards;
-}
-
-@keyframes circle-inicial {
-  20% {
-    fill: $secondary;
-  }
-  75% {
-  }
-  100% {
-    fill: $primary;
   }
 }
