@@ -1,21 +1,15 @@
-import Svg from "./svg";
+import Svg from "./svg"
+import { elements } from "./elements"
 
-export const elements = new (function() {
-    this.perColumn = 10;
-    this.perRow = 35;
-    this.size = animate.offsetWidth / this.perRow;
-    this.number = this.perRow * this.perColumn;
-})();
-
-const Matrix = new (class {
-    constructor(quantity, rowElements, elementSize) {
-        this._elementSize = elementSize;
-        this._quantity = quantity;
-        this._rowElements = rowElements;
-        this._totalElements = [];
-        for (let index = 0; index < this._quantity; index++) {
-            const svg = new Svg(this._elementSize, this._rowElements);
-            this._totalElements.push(svg.svg);
-        }
+export const Matrix = new (class {
+  constructor(elements) {
+    this.elementSize = elements.size
+    this.quantity = elements.number
+    this.rowElements = elements.perRow
+    this.totalElements = []
+    for (let index = 0; index < this.quantity; index++) {
+      const svg = new Svg(this.elementSize)
+      this.totalElements.push(svg)
     }
-})(elements.number, elements.perRow, elements.size);
+  }
+})(elements)
