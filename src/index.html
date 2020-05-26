@@ -1,186 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="frontend dev developer javascript react" />
+    <meta
+      name="description"
+      content="Personal website of José Maria Mazzei, a Frontend Developer."
+    />
+    <meta name="author" content="José María Mazzei" />
+    <meta name="theme-color" content="#2E3047" />
+    <meta name="msapplication-navbutton-color" content="#2E3047" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2E3047" />
 
-<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Playfair+Display:700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Front Dev</title>
+  </head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="frontend dev developer javascript react">
-  <meta name="description" content="Personal website of José Maria Mazzei, a Frontend Developer.">
-  <meta name="author" content="José María Mazzei" />
-  <meta name="theme-color" content="#2E3047">
-  <meta name="msapplication-navbutton-color" content="#2E3047">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#2E3047">
+  <body id="body">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#projects" id="nav-projects"><code>/projects</code></a>
+        </li>
+        <li>
+          <a href="#contact" id="nav-contact"><code>/contact</code></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="presentation">
+        <div class="presentation__body">
+          <h1>José María Mazzei</h1>
+          <code>frontend developer</code>
+        </div>
+        <div class="presentation__animation" id="animate"></div>
+      </section>
+      <div class="shadow"></div>
 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Playfair+Display:700&display=swap"
-    rel="stylesheet">
-  <title>Front Dev</title>
-</head>
+      <h2 class="title" id="projects"><a href="#projects">/projects</a></h2>
 
-<body id="body">
-  <nav class="navbar">
-    <ul>
-      <li><a href="#projects" id="nav-projects"><code>/projects</code></a></li>
-      <li><a href="#contact" id="nav-contact"><code>/contact</code></a></li>
-    </ul>
-  </nav>
-  <main>
-    <section class="presentation">
-      <div class="presentation__body">
-        <h1>José María Mazzei</h1>
-        <code>frontend developer</code>
-      </div>
-      <div class="presentation__animation" id="animate">
+      <section class="projects">
+        <div class="card">
+          <div class="card__body">
+            <h3>nfc_telegram</h3>
+            <p>
+              Bot that sends a message to a specific telegram user every time
+              the user puts the phone next to a NFC tag.
+            </p>
+            <code>Made with Node. Uploaded to Heroku.</code>
 
-      </div>
-    </section>
-    <div class="shadow">
-    </div>
-
-    <h2 class="title" id="projects"><a href="#projects">/projects</a></h2>
-
-
-    <section class="projects">
-
-      <div class="card">
-        <div class="card__body">
-          <h3>nfc_telegram</h3>
-          <p>Bot that sends a message to a specific telegram user every time the user puts the phone next to a NFC tag.
-          </p>
-          <code>Made with Node. Uploaded to Heroku.</code>
-
-          <div class="card__links">
-            <a href="https://dev.to/username_pepe/make-a-nfc-tag-catalyzed-telegram-bot-4fgm">guide</a>
-            <a href="https://github.com/jmmzzei/nfc-telegram">code</a>
+            <div class="card__links">
+              <a
+                href="https://dev.to/username_pepe/make-a-nfc-tag-catalyzed-telegram-bot-4fgm"
+                >guide</a
+              >
+              <a href="https://github.com/jmmzzei/nfc-telegram">code</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card__body">
-          <h3>minimal_background</h3>
-          <p>Simple and straightforward web app for create and download solid and gradient backgrounds for your phone,
-            tablet or desktop pc.</p>
-          <code>Made with Vanilla JS, Webpack (Postcss and Babel) and Sass</code>
-          <div class="card__links">
-            <a href="https://minimal-background.jmmazzei.com/">visit</a>
-            <a href="https://github.com/jmmzzei/minimal-background">code</a>
+        <div class="card">
+          <div class="card__body">
+            <h3>minimal_background</h3>
+            <p>
+              Simple and straightforward web app for create and download solid
+              and gradient backgrounds for your phone, tablet or desktop pc.
+            </p>
+            <code
+              >Made with Vanilla JS, Webpack (Postcss and Babel) and Sass</code
+            >
+            <div class="card__links">
+              <a href="https://minimal-background.jmmazzei.com/">visit</a>
+              <a href="https://github.com/jmmzzei/minimal-background">code</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h3>scene_color_picker</h3>
-          <p>Little web app that allows to test different colors on a specific image.</p>
-          <code>Made with Vanilla JS, Webpack (Postcss and Babel) and Sass. The svgs were made with a pixel based photo editor along with a vector graphics editor. </code>
-          <div class="card__links">
-            <a href="https://scene-color-picker.jmmazzei.com/">visit</a>
-            <a href="https://github.com/jmmzzei/scene-color-picker">code</a>
+        <div class="card">
+          <div class="card__body">
+            <h3>scene_color_picker</h3>
+            <p>
+              Little web app that allows to test different colors on a specific
+              image.
+            </p>
+            <code
+              >Made with Vanilla JS, Webpack (Postcss and Babel) and Sass. The
+              svgs were made with a pixel based photo editor along with a vector
+              graphics editor.
+            </code>
+            <div class="card__links">
+              <a href="https://scene-color-picker.jmmazzei.com/">visit</a>
+              <a href="https://github.com/jmmzzei/scene-color-picker">code</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h3>twittear-jobs</h3>
-          <p>Server-side rendering web app that gets all the job offer posts based on user parameters.</p>
-          <code>Made with Vanilla JS, Webpack and Sass</code>
-          <div class="card__links">
-            <a href="https://twittear-jobs.herokuapp.com">visit</a>
-            <a href="https://github.com/jmmzzei/twitteAR-jobs">code</a>
+        <div class="card">
+          <div class="card__body">
+            <h3>twittear-jobs</h3>
+            <p>
+              Server-side rendering web app that gets all the job offer posts
+              based on user parameters.
+            </p>
+            <code>Made with Vanilla JS, Webpack and Sass</code>
+            <div class="card__links">
+              <a href="https://twittear-jobs.herokuapp.com">visit</a>
+              <a href="https://github.com/jmmzzei/twitteAR-jobs">code</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="card">
-                <div class="card__body">
-                    <h3>image_telegram</h3>
-                    <p>Bot that makes use of the inline buttons that allows navigate through itself according to the user selections until finally display the required information.</p>
-                    <code>Made with Node and MongoDB</code>
-                    <div class="card__links">
-                        <a href="www.google.com">visit</a>
-                        <a href="www.google.com">code</a>
-                    </div>
-                </div>
-            </div> -->
-      <div class="card">
-        <div class="card__body">
-          <h3>artist_website</h3>
-          <p>Commercial website for a plastic artist.</p>
-          <code>Made with Vanilla JS, Webpack and Sass</code>
-          <div class="card__links">
-            <a href="www.escodagabriela.com">visit</a>
-            <!-- <a href="www.google.com">code</a> -->
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h3>almuerzi</h3>
-          <p>React Native app for make food orders. REST API made with Node and hosted serverless in Zeit.</p>
-          <code>Made with React Native and Node. Hosted in Zeit.</code>
-          <div class="card__links">
-            <a href="https://github.com/jmmzzei/almuerzi-api">code</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h3>weather_app</h3>
-          <p>React app that fetches data from the OpenWeatherMap API.</p>
-          <code>Made with React, Hooks and the Container API.</code>
-          <div class="card__links">
-            <a href="https://github.com/jmmzzei/weather-web-app">code</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h3>movie_finder</h3>
-          <p>React app that fetches data from the The Movie Database AP based on a search parameter defined by the user.
-            The app also allows to view the details of each selected movie.</p>
-          <code>Made with React, Hooks, Reach Router and Styled Components.</code>
-          <div class="card__links">
-            <a href="https://github.com/jmmzzei/movie-react-app">code</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h3>crypto_cli</h3>
-          <p>Command line app for getting cryptocurrencies related data.</p>
-          <code>Made with Node JS, Commander, Inquirer and other libraries.</code>
-          <div class="card__links">
-            <a href="https://www.npmjs.com/package/@jmmzz/cryptodata/v/1.0.7">download</a>
-            <a href="https://github.com/jmmzzei/crypto_cli">code</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <h2 class="title" id="contact"><a href="#contact">/contact</a></h2>
+        <div class="card">
+          <div class="card__body">
+            <h3>redux_calendar</h3>
+            <p>
+              React+Redux calendar app that makes use of the browser's Local
+              Storage to persist data.
+            </p>
+            <code
+              >Made with React, Hooks, React-Router, Redux and
+              Styled-Componentes. Hosted in Github Pages.</code
+            >
+            <div class="card__links">
+              <a href="https://jmmzzei.github.io/redux-calendar/">visit</a>
+              <a href="https://github.com/jmmzzei/redux-calendar">code</a>
+            </div>
+          </div>
+        </div>
 
-    <section class="contact">
-      <form action="https://formspree.io/mzbrlabk" method="POST">
-        <label>
-          Email:
-          <input type="email" name="_replyto" placeholder="jane.doe@gmail.com" required>
-        </label>
-        <label>
-          Subject:
-          <input type="text" name="_subject" placeholder="Email subject" required>
-        </label>
-        <label>
-          Message:
-          <textarea name="message" required></textarea>
-        </label>
+        <div class="card">
+          <div class="card__body">
+            <h3>redux_todo</h3>
+            <p>
+              React+Redux calendar app that makes use of the browser's Local
+              Storage to persist data.
+            </p>
+            <code
+              >Made with React, Hooks, React-Router, Redux and
+              Styled-Componentes. Hosted in Github Pages.</code
+            >
+            <div class="card__links">
+              <a href="https://jmmzzei.github.io/redux-calendar/">code</a>
+            </div>
+          </div>
+        </div>
 
-        <button type="submit" class="submit">Send</button>
-      </form>
+        <!--<div class="card">-->
+        <!--<div class="card__body">-->
+        <!--<h3>image_telegram</h3>-->
+        <!--<p>Telegram bot that makes use of the inline buttons whichs allow to navigate through itself according to the user selections until finally display the required information.</p>-->
+        <!--<code>Made with Node and MongoDB</code>-->
+        <!--<div class="card__links">-->
+        <!--<a href="www.google.com">visit</a>-->
+        <!--<a href="www.google.com">code</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
-    </section>
-  </main>
+        <div class="card">
+          <div class="card__body">
+            <h3>artist_website</h3>
+            <p>Commercial website for a plastic artist.</p>
+            <code>Made with Vanilla JS, Webpack and Sass</code>
+            <div class="card__links">
+              <a href="www.escodagabriela.com">visit</a>
+              <!-- <a href="www.google.com">code</a> -->
+            </div>
+          </div>
+        </div>
 
-</body>
+        <div class="card">
+          <div class="card__body">
+            <h3>almuerzi</h3>
+            <p>
+              React Native app for make food orders. REST API made with Node and
+              hosted serverless in Zeit.
+            </p>
+            <code>Made with React Native and Node. Hosted in Zeit.</code>
+            <div class="card__links">
+              <a href="https://github.com/jmmzzei/almuerzi-api">code</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="card__body">
+            <h3>weather_app</h3>
+            <p>React app that fetches data from the OpenWeatherMap API.</p>
+            <code>Made with React, Hooks and the Container API.</code>
+            <div class="card__links">
+              <a href="https://github.com/jmmzzei/weather-web-app">code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__body">
+            <h3>movie_finder</h3>
+            <p>
+              React app that fetches data from the The Movie Database AP based
+              on a search parameter defined by the user. The app also allows to
+              view the details of each selected movie.
+            </p>
+            <code
+              >Made with React, Hooks, Reach Router and Styled Components.</code
+            >
+            <div class="card__links">
+              <a href="https://github.com/jmmzzei/movie-react-app">code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__body">
+            <h3>crypto_cli</h3>
+            <p>Command line app for getting cryptocurrencies related data.</p>
+            <code
+              >Made with Node JS, Commander, Inquirer and other libraries.</code
+            >
+            <div class="card__links">
+              <a href="https://www.npmjs.com/package/@jmmzz/cryptodata/v/1.0.7"
+                >download</a
+              >
+              <a href="https://github.com/jmmzzei/crypto_cli">code</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="title" id="contact"><a href="#contact">/contact</a></h2>
+
+      <section class="contact">
+        <p> If you like what you saw, feel free to reach out to me to <a href="mailto:josemmazzei@gmail.com">josemmazzei@gmail.com</a>.</p>
+      </section>
+    </main>
+  </body>
 </html>

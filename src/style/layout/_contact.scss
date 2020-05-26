@@ -2,73 +2,17 @@
   display: flex;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 10rem;
+  margin-bottom: 18rem;
   width: 95%;
   font-family: "Open Sans", sans-serif;
   justify-content: center;
+  text-align:center;
+  
+  p{
+   color: $secondary;
+  }
 
-  form {
-    z-index: 1000;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-
-    button {
-      font-family: inherit;
-      width: 100%;
-      padding: 1.5rem;
-      background: $background;
-      border-radius: 6px;
-      border: 1px solid $primary;
-      margin-top: 0;
-      color: #fff;
-      outline-color: #fff;
-      margin-top: 3rem;
-    }
-
-    .submit {
-      color: $primary;
-      font-weight: 800;
-      cursor: pointer;
-
-      &:hover {
-        color: #fff;
-        border: 1px solid #fff;
-        text-decoration: underline;
-        transition: 0.3s;
-      }
-    }
-
-    label {
-      display: block;
-      margin-top: 3rem;
-      margin-bottom: 0;
-      text-align: start;
-
-      input {
-        font-family: inherit;
-        width: 100%;
-        padding: 1.5rem;
-        background: $background;
-        border-radius: 6px;
-        border: 1px solid $primary;
-        margin-top: 0;
-        color: #fff;
-        outline-color: #fff;
-        margin-top: 10px;
-      }
-
-      textarea {
-        font-family: inherit;
-        width: 100%;
-        padding: 1.5rem;
-        background: $background;
-        border-radius: 5px;
-        border: 1px solid $primary;
-        color: #fff;
-        outline-color: #fff;
-        margin-top: 1rem;
-      }
-    }
+  a{
+   color: $primary;
   }
 }
