@@ -29,14 +29,14 @@
     color: $background;
   }
 
-  & > &__body {
-    font-family: monospace;
+  .card__body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 2rem;
 
     h3 {
+      font-family:monospace; 
       position: absolute;
       top: 0;
       left: 0;
