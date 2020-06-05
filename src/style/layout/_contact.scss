@@ -1,15 +1,21 @@
+.wrapper{
+  width: 100%;
+  background: linear-gradient(90deg, $background, $dark, $background);
+  position:relative;
+}
+
 .contact {
   display: flex;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 18rem;
+  padding-bottom: 13rem;
   width: 95%;
   font-family: "Open Sans", sans-serif;
   justify-content: center;
   text-align:center;
-  
+
   p{
-   color: $secondary;
+   color: white;
   }
 
   a{

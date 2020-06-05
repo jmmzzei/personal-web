@@ -2,6 +2,8 @@
 @import "./base/reset";
 @import "./base/var";
 @import "./layout/main-body";
+@import "./layout/about";
+@import "./layout/media";
 
 @media (min-width: 36em) {
   .presentation {
@@ -34,6 +36,11 @@
     }
   }
 
+  .projects{
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+    width: 75%;
+  }
+
   .contact {
     width: 75%;
     justify-content: center;
@@ -51,14 +58,15 @@
   }
 
   .title {
-    margin-top: 8rem;
     font-size: $tag + 1rem;
+    width: 75%;
   }
 }
 
 @media (min-width: 62em) {
   .presentation {
     & > &__body {
+      margin-bottom: 7rem;
       width: 85%;
       & > h1 {
         font-size: $title + 2.2rem;
@@ -66,8 +74,12 @@
     }
   }
 
+  .about{
+    width:75%;
+  }
+
   .title {
-    font-size: $tag + 0.5rem;
+   a{ font-size: 2.5rem;}
   }
 }
 
