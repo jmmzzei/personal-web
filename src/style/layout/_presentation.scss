@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: row;
   margin: auto;
-  height: 80vh;
+  height: 90vh;
 
   &__body {
     display: flex;
@@ -21,6 +21,8 @@
       font-size: $title;
       color: $secondary;
       margin: 0;
+      opacity:0;
+      @include animation(y, up);
     }
 
     code {
@@ -30,6 +32,7 @@
       color: $primary;
       margin-left: 0;
       margin-top: 2rem;
+      @include animation(x, left);
     }
   }
 
@@ -37,5 +40,6 @@
     display: none;
     max-width: 700px;
     max-height: 200px;
+    @include animation(x, right);
   }
 }

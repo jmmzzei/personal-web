@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  @include animation(x, right);
 
   ul {
     width: 100%;

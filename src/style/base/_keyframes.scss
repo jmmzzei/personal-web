@@ -1,0 +1,26 @@
+@mixin createKeyframe($axis, $value, $from){
+  $name: 'show-' + $axis + $from;
+  @keyframes #{$name} {
+    0%{
+        opacity:0;
+        transform: if($axis == 'y', translateY($value), translateX($value));
+    }
+    100%{
+      transform: if($axis == 'y', translateY(0), translateX(0));     
+      opacity:1;
+    }
+  }
+}
+
+@include createKeyframe('x', -20px, left);
+@include createKeyframe('y', 20px, down);
+@include createKeyframe('x', 20px, right);
+@include createKeyframe('y', -20px, up);
+
+@mixin animation($axis, $from){
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    $name: 'show-' + $axis + $from;
+    animation-name: #{$name};
+}
