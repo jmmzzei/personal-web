@@ -7,25 +7,34 @@
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  overflow: hidden;
 
   &:hover {
+    border: 1px solid $primary;
     transform: scale(1.02) translateY(-4px);
     box-shadow: 0 5px 1.2em black;
     transition: 0.2s;
   }
 
   &:hover > &__body > div > a {
-    color: $background;
+    color: $accent;
   }
 
   &:hover > &__body > h3 {
-    background: $background;
-    color: $secondary;
+    animation: cardTitle 0.2s ease-out forwards;
   }
 
-  &:hover > &__body {
-    background: $secondary;
-    color: $background;
+  @keyframes cardTitle {
+    0%{
+      transform: translateY(-40px);
+      background: $background;
+      color: $primary;
+    }
+    100%{
+      transform: translateY(0);
+      background: $background;
+      color: $primary;
+    }
   }
 
   .card__body {
@@ -35,7 +44,7 @@
     margin: 2rem;
 
     h3 {
-      font-family:monospace; 
+      font-family:monospace;
       position: absolute;
       top: 0;
       left: 0;
@@ -79,11 +88,10 @@
         margin-left: 3rem;
         padding: 5px;
         font-weight: 800;
-        color: $accent;
+        color: $primary;
 
         &:hover {
-          background: $background;
-          color: white;
+          color: $primary;
           font-weight: 800;
         }
       }
