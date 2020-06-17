@@ -1,0 +1,21 @@
+.about{
+  margin: 0 auto;
+  background: linear-gradient(90deg, $background, $dark, $background);
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $primary; 
+
+  .title{
+    padding-top: 2rem; 
+    margin-bottom: 2rem; 
+    width:100%;
+  }
+  
+  &__body{
+    width:80%;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 3rem;
+  }
+}
