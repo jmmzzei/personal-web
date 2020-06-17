@@ -1,0 +1,140 @@
+{
+  "en":{
+    "nav":{
+      "nav-about":"about",
+      "nav-projects":"projects",
+      "nav-contact":"contact"
+    },
+"aboutcontent":{
+  "first": "Professionally, I'm an autodidact, curious Frontend Developer who loves knowing how the working things work. Nowadays I'm studying Software Engineering at the UTN of Rosario to complement my programming knowledge. I think that the applications that I've done say more about what I know than a few paragraphs, so above you could find the links to the projects I developed and its source code.",
+  "second": "I have a good level of Javascript and CSS and I feel particularly comfortable working with React and Sass. Also, I made some projects with Node (Express), PHP (Laravel), and Java (Android).",
+  "third": "I think that the apps that I've made say more about what I know than a few paragraphs, so above you could find the links to the projects I developed and its source code."
+},
+"minimal": {
+  "p": "Web app for create and download solid and gradient images. Originally developed for creating wallpapers, nowadays it can be used for creating imagesfor phones, tablets or larger displays due to its image modification capabilities.",
+  "code": "Made with vanilla JS, Webpack (Postcss, Babel and Sass). Hosted in a shared hosting."
+  },
+"twittear": {
+  "p": "Server-side rendering web app that offers a enviorenment without distractions that lets the user gets all the job offer posts based on her/his parameters.",
+  "code": "Made with Node (Express), Webpack and Sass. Makes use of the Twitter API and is hosted in Heroku."
+  },
+"nfc": {
+  "p": "Telegram bot that sends a message to a specific user every time the user puts the phone next to a NFC tag.",
+  "code": "Made with Node (Express), makes use of the Telegram API through Telegraf.js and is deployed to Heroku."
+  },
+"calendar": {
+  "p": "React and Redux calendar app that makes use of the browser's Local Storage to persist data.",
+  "code": "Made with React, Hooks, React-Router, Redux and Styled-Componentes. Hosted in Github Pages."
+  },
+"movie": {
+  "p": "React app that fetches data from the The Movie Database API based on a search parameter defined by the user. The app also allows to view the details of each selected movie.",
+  "code": "Made with React, Hooks, Reach Router and Styled Components."
+  },
+"music": {
+  "p": "React web app for searching artist information, including her/his biography, top songs, top albums, related artists, among others. Makes use of the Last.fm API.",
+  "code": "Made with React classes, following the presentational and container components pattern. The app uses React-Router for client-side routing and Bulma for styling. Hosted in Netlify."
+  },
+"todo": {
+  "p": "React and Redux calendar app that makes use of the browser's Local Storage to persist data.",
+  "code": "Made with React, Hooks, React-Router, Redux and Styled-Componentes. Hosted in Github Pages."
+  },
+"social":{
+  "p": "Instagram clon with all the basic functionalities. Lets the user login, follow other users, create posts and visualize profiles.",
+  "code": "Made with PHP (Laravel), React, Bootstrap and Sqlite as database manipulated trough Eloquent."
+},
+"page": {
+  "p": "Code of the current page.",
+  "code": "Developed with Javascript, Sass and Webpack. Hosted in a shared hosting."
+  },
+"neopixel": {
+  "p": "Redesign, and turn into responsive, of an open source project that lets the user create led strips animations and download the resulting code for being utilized in any Arduino board.",
+  "code": "Made with Vanilla Javascript y CSS."
+  },
+"weatherandroid": {
+  "p": "Final project of an Android course. It's an app that fetches the current weather of the cities that were previosuly stored in a Sqlite database.",
+  "code": "Made with Java, the Android and OpenWeatherMap API and Sqlite."
+  },
+"weather": {
+  "p": "React app that fetches data from the OpenWeatherMap API in order to get the current weather data and also the one for the next six days.",
+  "code": "Made with React, Hooks and the Container API."
+  },
+"cli": {
+  "p": "Command line application for getting cryptocurrencies related data.",
+  "code": "Made with Node, Commander, Inquirer and other libraries."
+  },
+"almuerzi": {
+  "p": "React Native app for make food orders. The REST API was made with Node.",
+  "code": "Made with React Native and Node (Express). Hosted in Vercel."
+  },
+"contact": "If you like what you've seen, feel free to reach out to me to "  
+  },
+  "es":{
+    "nav":{
+      "nav-about":"sobre mi",
+      "nav-projects":"proyectos",
+      "nav-contact":"contacto"
+    },
+"aboutcontent":{
+  "first": "En el ámbito profesional, soy un Desarrollador Frontend autodidacta y curioso al que le encanta saber cómo funcionan las cosas que funcionan. Actualmente me encuentro estudiando la carrera de Ingeniería en Sistemas en la UTN de Rosario para complementar mis conocimientos sobre programación.",
+  "second": "Me desenvuelvo bien en Javascript y CSS, y me siento cómodo trabajando con React y Sass. Además, he hecho algunos proyectos con Node, Java (Android) y PHP (Laravel).",
+  "third": "Creo que las aplicaciones que realicé dicen más de mis habilidades y conocimientos que lo que puedo escribir en un par de párrafos, por eso debajo se encuentran los links a la mayoría de las aplicaciones que desarrollé, junto con su código fuente."
+},
+"minimal": {
+  "p": "Aplicación web para crear y descargar imágenes con colores sólidos y gradientes. Originalmente desarrollada para crear fondos de pantalla, actualmente su uso es más amplio dado que permite que el usuario pueda elegir la calidad de la imagen, sus dimensiones y su extensión permitiendo usar el resultado final en celulares, tablets y pantallas de mayor tamaño.",
+  "code": "Hecha con vanilla JS, Webpack (Postcss y Babel) y Sass. Hosteada en un shared hosting."
+  },
+"twittear": {
+  "p": "Aplicación server-side rendering que brinda un entorno sin distracciones para que el usuario pueda realizar búsquedas de empleo utilizando el buscador de Twitter.",
+  "code": "Hecha con Node (Express), Webpack y Sass. Hace uso de la API de Twitter y está hosteada en Heroku."
+  },
+"nfc": {
+  "p": "Bot de Telegram que permite mandar un mensaje a un usuario específico cada vez que el celular es acercado a una etiqueta NFC determinada.",
+  "code": "Hecha con Node (Express), hace uso de la API de Telegram a través de Telegraf.js y está desplegada a Heroku."
+  },
+"calendar": {
+  "p": "Calendario hecho con React y Redux que hace uso del Local Storage del navegador para almacenar la información.",
+  "code": "Hecha con React, Hooks, React-Router, Redux y Styled-Componentes. Hosteada en Github Pages."
+  },
+"movie": {
+  "p": "Aplicación desarrollada en React que hace uso de la API de MovieDB para obtener información de la película buscada o para buscar las películas más populares.",
+  "code": "Hecha con React, Hooks, Reach Router y Styled Components."
+  },
+"music": {
+  "p": "Aplicación web hecha en React que utiliza la API de Last.fm para buscar información sobre un artista específico.",
+  "code": "Hecha con React classes, siguiendo el modelo de componentes de presentación y contenedores. Utiliza React-Router para client-side routing y Bulma para estilizar. Hosteada en Netlify."
+  },
+"todo": {
+  "p": "Aplicación de tareas hecha en React y Redux que guarda la información en el Local Storage del navegador.",
+  "code": "Hecha con React, Hooks, React-Router, Redux y Styled-Componentes. Hosteada en Github Pages."
+  },
+"neopixel": {
+  "p": "Rediseño responsive del frontend de un proyecto open source para generar animaciones de tiras leds y descargar su código para que funciones en cualquier placa Arduino.",
+  "code": "Hecha con vanilla JS y CSS."
+  },
+"social":{
+  "p": "Clon de Instagram con todas sus funcionalidades básicas. Permite registrarse, seguir usuarios, crear posts y visualizar perfiles.",
+  "code": "Hecha con PHP (Laravel), React, Bootstrap y Sqlite como base de datos manipulada en la aplicación a través de Eloquent."
+},
+"weather": {
+  "p": "Aplicación web hecha con React que hace uso de la API de OpenWeatherMap para obtener los datos actuales del clima y también los de los próximos seis días.",
+  "code": "Hecha con React, Hooks y la API Container para compartir datos entre todos los componentes de la aplicación."
+  },
+"weatherandroid": {
+  "p": "Proyecto final para un curso de Android de la UTN. Es una aplicación que obtiene el clima de las ciudades previamente guardadas por el usuario en la base de datos Sqlite del celular.",
+  "code": "Hecha con Java, la API de Android y de OpenWeatherMap y Sqlite."
+  },
+"page": {
+  "p": "Código de la página actual.",
+  "code": "Desarrollada con vanilla Javascript y Webpack (Babel, Postcss y Sass). Hosteada en un shared hosting."
+  },
+"cli": {
+  "p": "Aplicación CLI para obtener información relevante sobre las criptomonedas requeridas.",
+  "code": "Hecha con Node, la API de CoinAPI, Commander, Inquirer y librerías adicionales para el estilizado de la aplicación."
+  },
+"almuerzi": {
+  "p": "Aplicación para realizar pedidos de comida hecha en React Native. Cuenta con dos partes, la API REST y la aplicación.",
+  "code": "Hecha con React Native y Node (Express). Hosteada en Vercel."
+  },
+"contact": "Si te interesó lo que viste, contáctame al "  
+  }
+}
