@@ -21,7 +21,6 @@ main {
   text-align: end;
   margin: 0 auto;
   margin-bottom: 4rem;
-  font-size: 2rem;
   padding: 1.2rem;
   padding-top:2rem;
   width: 100%;
@@ -29,6 +28,7 @@ main {
   
   a {
     border-radius: 1rem;
+    font-size: $tag;
     text-decoration: none;
     padding: 5px;
     color: white;
