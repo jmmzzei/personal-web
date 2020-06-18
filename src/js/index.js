@@ -55,5 +55,5 @@ const menuBtn = document.getElementById('menu')
 const ul = document.getElementById('ul')
 
 menuBtn.addEventListener('click', ()=>{
-  ul.style.display = ul.style.display == 'none' ? 'flex' : 'none'  
+  ul.style.display = ul.style.display !== 'flex' ? 'flex' : 'none'  
 })
