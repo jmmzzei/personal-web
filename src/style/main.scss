@@ -26,14 +26,6 @@
   
   .presentation {
     height: 100vh;  
-    & > &__body {
-      & > h1 {
-        font-size: $title + 0.8rem;
-      }
-      & > code {
-        font-size: $subtitle + 0.5rem;
-      }
-    }
   }
 }
 
@@ -43,9 +35,6 @@
     & > &__body {
       flex-direction: column;
       align-items: center;
-      & > code {
-        font-size: $subtitle + 1.5rem;
-      }
     }
 
     & > &__animation {
@@ -76,7 +65,6 @@
   }
 
   .title {
-    font-size: $tag + 1rem;
     width: 75%;
   }
 }
@@ -84,10 +72,13 @@
 @media (min-width: 62em) {
   .presentation {
     & > &__body {
-      margin-bottom: 7rem;
+      margin-bottom: 5rem;
       width: 85%;
       & > h1 {
-        font-size: $title + 2.2rem;
+        font-size: $title + 0.8rem;
+      }
+      & > code {
+        font-size: $subtitle + 0.4rem;
       }
     }
   }
@@ -97,25 +88,20 @@
   }
 
   .title {
-   a{ font-size: 2.5rem;}
+   a{ font-size: $tag;}
   }
 }
 
 @media (min-width: 75em) {
   .presentation {
+    margin-bottom: 7rem;
     & > &__body {
       & > h1 {
-        font-size: $title + 3rem;
+        font-size: $title + 2rem;
       }
-
       & > code {
-        font-size: $subtitle + 2rem;
+        font-size: $subtitle + 0.8rem;
       }
     }
-  }
-
-  .contact {
-    width: 50%;
-    justify-content: center;
   }
 }
