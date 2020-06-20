@@ -1,5 +1,6 @@
 import "./../style/main.scss"
 import "../github64.png"
+import "../icon.png"
 import { elements } from "./elements"
 import { Matrix } from "./matrix"
 import lang from "../lang.json"
