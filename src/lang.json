@@ -26,6 +26,10 @@
       "p": "React and Redux calendar app that makes use of the browser's Local Storage to persist data.",
       "code": "Made with React, Hooks, React-Router, Redux and Styled-Componentes. Hosted in Github Pages."
     },
+    "graph": {
+      "p": "GraphQL API for getting, storing, deleting and replacing products.",
+      "code": "Coded in Node (Express), Typescript, GraphQL and Postgres manipulated through TypeORM."
+    },
     "movie": {
       "p": "React app that fetches data from the The Movie Database API based on a search parameter defined by the user. The app also allows to view the details of each selected movie.",
       "code": "Made with React, Hooks, Reach Router and Styled Components."
@@ -40,7 +44,7 @@
     },
     "social": {
       "p": "Instagram clon with all the basic functionalities. Lets the user login, follow other users, create posts and visualize profiles.",
-      "code": "Made with PHP (Laravel), React, Bootstrap and Sqlite as database manipulated trough Eloquent."
+      "code": "Made with PHP (Laravel), React, Bootstrap and Postgres as database manipulated trough Eloquent."
     },
     "page": {
       "p": "Code of the current page.",
@@ -113,7 +117,7 @@
     },
     "social": {
       "p": "Clon de Instagram con todas sus funcionalidades básicas. Permite registrarse, seguir usuarios, crear posts y visualizar perfiles.",
-      "code": "Hecha con PHP (Laravel), React, Bootstrap y Sqlite como base de datos manipulada en la aplicación a través de Eloquent."
+      "code": "Hecha con PHP (Laravel), React, Bootstrap y Postgres como base de datos manipulada a través de Eloquent."
     },
     "weather": {
       "p": "Aplicación web hecha con React que hace uso de la API de OpenWeatherMap para obtener los datos actuales del clima y también los de los próximos seis días.",
@@ -130,6 +134,10 @@
     "cli": {
       "p": "Aplicación CLI para obtener información relevante sobre las criptomonedas requeridas.",
       "code": "Hecha con Node, la API de CoinAPI, Commander, Inquirer y librerías adicionales para el estilizado de la aplicación."
+    },
+    "graph": {
+      "p": "GraphQL API para almacenar, obtener, eliminar y modificar productos.",
+      "code": "Programada con Node (Express), Typescript, GraphQL y Postgres como base de datos manipulada a través de TypeORM."
     },
     "almuerzi": {
       "p": "Aplicación para realizar pedidos de comida hecha en React Native. Cuenta con dos partes, la API REST y la aplicación.",
