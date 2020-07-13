@@ -7,7 +7,7 @@
     },
     "aboutcontent": {
       "first": "Professionally, I'm an autodidact, curious Frontend Developer who loves knowing how the working things work. Nowadays I'm studying Software Engineering at the UTN of Rosario to complement my programming knowledge.",
-      "second": "I have a good level of Javascript and CSS and I feel particularly comfortable working with React and Sass. Also, I made some projects with Node (Express), PHP (Laravel), and Java (Android).",
+      "second": "I have a good level of Javascript and CSS and I feel particularly comfortable working with React and Sass. Also, I made some projects with Node (Express), PHP (Laravel) and Typescript.",
       "third": "I think that the apps that I've made say more about what I know than a few paragraphs, so above you could find the links to the projects I developed and its source code."
     },
     "minimal": {
@@ -80,7 +80,7 @@
     },
     "aboutcontent": {
       "first": "En el ámbito profesional, soy un Desarrollador Frontend autodidacta y curioso al que le encanta saber cómo funcionan las cosas que funcionan. Actualmente me encuentro estudiando la carrera de Ingeniería en Sistemas en la UTN de Rosario para complementar mis conocimientos sobre programación.",
-      "second": "Me desenvuelvo bien en Javascript y CSS, y me siento cómodo trabajando con React y Sass. Además, he hecho algunos proyectos con Node, Java (Android) y PHP (Laravel).",
+      "second": "Me desenvuelvo bien en Javascript y CSS, y me siento cómodo trabajando con React y Sass. Además, he hecho algunos proyectos con Node (Express), Typescript y PHP (Laravel).",
       "third": "Creo que las aplicaciones que realicé dicen más de mis habilidades y conocimientos que lo que puedo escribir en un par de párrafos, por eso debajo se encuentran los links a la mayoría de las aplicaciones que desarrollé, junto con su código fuente."
     },
     "minimal": {
