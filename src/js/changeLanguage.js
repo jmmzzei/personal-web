@@ -2,6 +2,7 @@ import lang from "../lang.json"
 
 const cardIds = [
   "nfc",
+  "graph",
   "cli",
   "minimal",
   "twittear",
@@ -20,7 +21,9 @@ const cardIds = [
 const paragraph = ["first", "second", "third"]
 const navItems = ["about", "projects", "contact"]
 const links = ["code", "download", "guide", "guía", "código", "descargar"]
-const arrLinksContainer = Array.from(document.getElementsByClassName("card__links"))
+const arrLinksContainer = Array.from(
+  document.getElementsByClassName("card__links"),
+)
 
 export const changeLanguage = language => {
   cardIds.forEach(id => {

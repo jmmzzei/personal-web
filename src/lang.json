@@ -7,7 +7,7 @@
     },
     "aboutcontent": {
       "first": "Professionally, I'm an autodidact, curious Frontend Developer who loves knowing how the working things work. Nowadays I'm studying Software Engineering at the UTN of Rosario to complement my programming knowledge.",
-      "second": "I have a good level of Javascript and CSS and I feel particularly comfortable working with React and Sass. Also, I made some projects with Node (Express), PHP (Laravel), and Java (Android).",
+      "second": "I have a good level of Javascript and CSS and I feel particularly comfortable working with React and Sass. Also, I made some projects with Node (Express), PHP (Laravel) and Typescript.",
       "third": "I think that the apps that I've made say more about what I know than a few paragraphs, so above you could find the links to the projects I developed and its source code."
     },
     "minimal": {
@@ -15,7 +15,7 @@
       "code": "Made with vanilla JS, Webpack (Postcss, Babel and Sass). Hosted in a shared hosting."
     },
     "twittear": {
-      "p": "Server-side rendering web app that offers a enviorenment without distractions that lets the user gets all the job offer posts based on her/his parameters.",
+      "p": "Server-side rendered web app that offers a enviorenment without distractions that lets the user gets all the job offer posts based on her/his parameters.",
       "code": "Made with Node (Express), Webpack and Sass. Makes use of the Twitter API and is hosted in Heroku."
     },
     "nfc": {
@@ -25,6 +25,10 @@
     "calendar": {
       "p": "React and Redux calendar app that makes use of the browser's Local Storage to persist data.",
       "code": "Made with React, Hooks, React-Router, Redux and Styled-Componentes. Hosted in Github Pages."
+    },
+    "graph": {
+      "p": "GraphQL API for getting, storing, deleting and replacing products.",
+      "code": "Coded in Node (Express), Typescript, GraphQL and Postgres manipulated through TypeORM."
     },
     "movie": {
       "p": "React app that fetches data from the The Movie Database API based on a search parameter defined by the user. The app also allows to view the details of each selected movie.",
@@ -40,7 +44,7 @@
     },
     "social": {
       "p": "Instagram clon with all the basic functionalities. Lets the user login, follow other users, create posts and visualize profiles.",
-      "code": "Made with PHP (Laravel), React, Bootstrap and Sqlite as database manipulated trough Eloquent."
+      "code": "Made with PHP (Laravel), React, Bootstrap and Postgres as database manipulated trough Eloquent."
     },
     "page": {
       "p": "Code of the current page.",
@@ -76,7 +80,7 @@
     },
     "aboutcontent": {
       "first": "En el ámbito profesional, soy un Desarrollador Frontend autodidacta y curioso al que le encanta saber cómo funcionan las cosas que funcionan. Actualmente me encuentro estudiando la carrera de Ingeniería en Sistemas en la UTN de Rosario para complementar mis conocimientos sobre programación.",
-      "second": "Me desenvuelvo bien en Javascript y CSS, y me siento cómodo trabajando con React y Sass. Además, he hecho algunos proyectos con Node, Java (Android) y PHP (Laravel).",
+      "second": "Me desenvuelvo bien en Javascript y CSS, y me siento cómodo trabajando con React y Sass. Además, he hecho algunos proyectos con Node (Express), Typescript y PHP (Laravel).",
       "third": "Creo que las aplicaciones que realicé dicen más de mis habilidades y conocimientos que lo que puedo escribir en un par de párrafos, por eso debajo se encuentran los links a la mayoría de las aplicaciones que desarrollé, junto con su código fuente."
     },
     "minimal": {
@@ -84,7 +88,7 @@
       "code": "Hecha con vanilla JS, Webpack (Postcss y Babel) y Sass. Hosteada en un shared hosting."
     },
     "twittear": {
-      "p": "Aplicación server-side rendering que brinda un entorno sin distracciones para que el usuario pueda realizar búsquedas de empleo utilizando el buscador de Twitter.",
+      "p": "Aplicación server-side rendered que brinda un entorno sin distracciones para que el usuario pueda realizar búsquedas de empleo utilizando el buscador de Twitter.",
       "code": "Hecha con Node (Express), Webpack y Sass. Hace uso de la API de Twitter y está hosteada en Heroku."
     },
     "nfc": {
@@ -113,7 +117,7 @@
     },
     "social": {
       "p": "Clon de Instagram con todas sus funcionalidades básicas. Permite registrarse, seguir usuarios, crear posts y visualizar perfiles.",
-      "code": "Hecha con PHP (Laravel), React, Bootstrap y Sqlite como base de datos manipulada en la aplicación a través de Eloquent."
+      "code": "Hecha con PHP (Laravel), React, Bootstrap y Postgres como base de datos manipulada a través de Eloquent."
     },
     "weather": {
       "p": "Aplicación web hecha con React que hace uso de la API de OpenWeatherMap para obtener los datos actuales del clima y también los de los próximos seis días.",
@@ -130,6 +134,10 @@
     "cli": {
       "p": "Aplicación CLI para obtener información relevante sobre las criptomonedas requeridas.",
       "code": "Hecha con Node, la API de CoinAPI, Commander, Inquirer y librerías adicionales para el estilizado de la aplicación."
+    },
+    "graph": {
+      "p": "GraphQL API para almacenar, obtener, eliminar y modificar productos.",
+      "code": "Programada con Node (Express), Typescript, GraphQL y Postgres como base de datos manipulada a través de TypeORM."
     },
     "almuerzi": {
       "p": "Aplicación para realizar pedidos de comida hecha en React Native. Cuenta con dos partes, la API REST y la aplicación.",
