@@ -25,12 +25,12 @@
   }
 
   @keyframes cardTitle {
-    0%{
+    0% {
       transform: translateY(-40px);
       background: $background;
       color: $primary;
     }
-    100%{
+    100% {
       transform: translateY(0);
       background: $background;
       color: $primary;
@@ -44,7 +44,7 @@
     margin: 2rem;
 
     h3 {
-      font-family:monospace;
+      font-family: monospace;
       position: absolute;
       top: 0;
       left: 0;
@@ -57,15 +57,14 @@
       margin-bottom: 2rem;
       width: 100%;
       text-align: end;
-      color: $background;
-      background: $secondary;
+      color: $secondary;
     }
 
     p {
       padding-top: 6rem;
       width: 90%;
       margin: 1.5rem;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       text-align: end;
     }
 

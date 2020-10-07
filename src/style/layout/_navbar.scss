@@ -5,33 +5,33 @@
   justify-content: flex-end;
   margin: 0 auto;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 1;
   @include animation(x, right);
-   
-    .nav{
-      background: $background;
-      opacity: .98;
-      float: right;
-      display: flex;
-      flex-direction:column;
-      width: 95%;
-      align-items: flex-end;
 
-      button{
-        border: none;
-        height: 4.5rem;
-        border-radius: 5px;
-        margin: 1rem;
-        width: 4.5rem;
-        font-weight: bold; 
-        background: $dark;
-        color: white;
-      }
+  .nav {
+    background: $background;
+    opacity: 0.98;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: flex-end;
 
-      ul {
-      margin-left: 5rem; 
+    button {
+      border: none;
+      height: 4.5rem;
+      border-radius: 5px;
+      margin: 1rem;
+      width: 4.5rem;
+      font-weight: bold;
+      background: $dark;
+      color: white;
+    }
+
+    ul {
+      margin-left: 5rem;
       width: 100%;
       display: none;
       flex-direction: column;
@@ -40,29 +40,29 @@
       padding-left: 0;
 
       li {
-        height: 5rem; 
-        display:flex;
-        align-items:center;
+        height: 5rem;
+        display: flex;
+        align-items: center;
         justify-content: center;
         padding: 3px;
         margin-bottom: 1rem;
-        
-        button{
+
+        button {
           padding: 1rem;
           width: 100%;
           border: 1px solid $dark;
           border-radius: 5px;
           background: $dark;
           color: $secondary;
-          cursor:pointer;
+          cursor: pointer;
 
-          &:hover{
+          &:hover {
             border: 1px solid $primary;
           }
-          
-            b{
-              color: white;
-            }
+
+          b {
+            color: white;
+          }
         }
 
         a {
